@@ -1,6 +1,6 @@
-import { IconFishHook } from "@tabler/icons";
 import Link from "next/link";
 import Flex from "./Flex";
+import { IconFishHook } from "@tabler/icons-react";
 
 interface LogoProps {
     subtitulo?: string;

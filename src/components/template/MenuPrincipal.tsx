@@ -1,10 +1,10 @@
-import { IconNumbers} from "@tabler/icons";
 import { MenuItem } from "../../data/models/MenuItem";
 import { MenuSecao } from "../../data/models/MenuSecao";
 import Logo from "./Logo";
 import MenuPrincipalItem from "./MenuPrincipalItem";
 import MenuPrincipalSecao from "./MenuPrincipalSecao";
 import Flex from "./Flex";
+import { IconNumbers } from "@tabler/icons-react";
 
 export default function MenuPrincipal() {
     const secoes = [

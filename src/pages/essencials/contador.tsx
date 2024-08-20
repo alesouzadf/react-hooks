@@ -2,7 +2,7 @@ import Botao from "@/components/template/Botao";
 import Display from "@/components/template/Display";
 import Flex from "@/components/template/Flex";
 import Pagina from "@/components/template/Pagina";
-import IconMinus from "@tabler/icons"
+import { IconMinus } from "@tabler/icons-react";
 
 export default function(){
     let count = 0;
