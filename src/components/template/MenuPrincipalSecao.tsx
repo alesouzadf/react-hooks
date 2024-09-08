@@ -1,5 +1,6 @@
 import { IconMinus, IconPlus } from "@tabler/icons-react";
 import Flex from "./Flex";
+import UseToogle from "@/data/hooks/useToogle";
 
 interface MenuSecaoProps {
     titulo: string
@@ -10,7 +11,8 @@ interface MenuSecaoProps {
 }
 
 export default function MenuSecao(props: MenuSecaoProps) {
-    const { titulo, mini, aberta } = props;
+    const { titulo, mini} = props;
+    const [aberta, toogleAberta] = UseToogle(props.aberta)
 
     return (
         <Flex col gap={4} className={`${mini && "items-center"}`}>
@@ -18,7 +20,7 @@ export default function MenuSecao(props: MenuSecaoProps) {
                 flex items-center justify-between
                 text-zinc-400 uppercase font-bold 
                 ${mini && "text-[11px]"} cursor-pointer
-            `} onClick={() => props.onClick?.()}>
+            `} onClick={() => toogleAberta()}>
                 {mini ? titulo : (
                     <>
                         {titulo}
